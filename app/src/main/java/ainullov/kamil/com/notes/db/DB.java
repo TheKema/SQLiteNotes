@@ -1,4 +1,4 @@
-package ainullov.kamil.com.notes;
+package ainullov.kamil.com.notes.db;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -54,8 +54,8 @@ public class DB {
         mDB.delete(DB_TABLE, COLUMN_ID + " = " + id, null);
     }
 
-    public void update(ContentValues contentValues, String[] id){
-        mDB.update(DB_TABLE,contentValues, "_id = ?", id );
+    public void update(ContentValues contentValues, String[] id) {
+        mDB.update(DB_TABLE, contentValues, "_id = ?", id);
     }
 
     // Класс по созданию и управлению БД

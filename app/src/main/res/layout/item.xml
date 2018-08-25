@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llAdapter"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:id="@+id/llAdapter"
-    android:orientation="horizontal">
-
-    <TextView
-        android:id="@+id/ivImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvText"
@@ -18,7 +11,19 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="10dp"
-        android:text=""
-        android:textSize="18sp">
-    </TextView>
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="Note name"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="monospace"
+        android:text="Description"
+        android:textColor="@color/colorAccent" />
 </LinearLayout>

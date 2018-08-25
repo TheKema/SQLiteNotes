@@ -16,8 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreateNote" />
-        <activity android:name=".ChangeNote"></activity>
+        <activity
+            android:name=".notes.CreateNote"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".notes.ChangeNote"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

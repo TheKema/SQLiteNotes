@@ -1,4 +1,4 @@
-package ainullov.kamil.com.notes;
+package ainullov.kamil.com.notes.notes;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import ainullov.kamil.com.notes.R;
 
 public class CreateNote extends AppCompatActivity implements View.OnClickListener {
 
@@ -32,13 +34,14 @@ public class CreateNote extends AppCompatActivity implements View.OnClickListene
         switch (view.getId()) {
             case R.id.btnBack:
                 finish();
+                setResult(RESULT_CANCELED);
                 break;
             case R.id.btnCreate:
                 String strName = etName.getText().toString();
                 String strDesc = etDesc.getText().toString();
                 Intent intent = new Intent();
-                intent.putExtra("strName",strName);
-                intent.putExtra("strDesc",strDesc);
+                intent.putExtra("strName", strName);
+                intent.putExtra("strDesc", strDesc);
                 setResult(RESULT_OK, intent);
                 finish();
                 break;
